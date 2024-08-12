@@ -40,8 +40,8 @@ def window_based_matching(left_img, right_img, disparity_range, distance_method,
             for d in range(disparity_range):
                 window_cost = 0
                 # calculate 1 cost
-                for v in range(-kernel_half, kernel_half+1):
-                    for u in range(-kernel_half, kernel_half+1):
+                for v in range(-kernel_half, kernel_half):
+                    for u in range(-kernel_half, kernel_half):
                         if (x+u-d) < 0:
                             cost = max_value
                         else:
@@ -81,6 +81,6 @@ window_based_result_l1 = window_based_matching(left_img_path,
 window_based_result_l2 = window_based_matching(left_img_path,
                                                right_img_path,
                                                disparity_range,
-                                               l1_distance,
+                                               l2_distance,
                                                kernel_size,
                                                save_result=True)
