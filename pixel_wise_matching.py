@@ -83,8 +83,8 @@ def pixel_wise_matching_l2(left_img, right_img, disparity_range, save_result=Tru
     return depth
 
 
-left_img_path = 'tsukuba/left.png'
-right_img_path = 'tsukuba/right.png'
+left_img_path = 'assets/tsukuba/left.png'
+right_img_path = 'assets/tsukuba/right.png'
 disparity_range = 16
 
 pixel_wise_result_l1 = pixel_wise_matching_l1(left_img_path,
