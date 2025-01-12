@@ -39,11 +39,6 @@ To use this project:
 
 1.  **Clone the repository:**
 
-    ```bash
-    git clone <repository_url>
-    cd image_depth_estimation
-    ```
-
 2.  **Ensure you have the required libraries:**
     -   `opencv-python`
     -   `numpy`
